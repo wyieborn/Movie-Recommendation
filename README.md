@@ -1,2 +1,4 @@
 # Movie-Recommendation
-Movie Recommendation using Collaborative Filtering and Redis.
+Movie Recommendation using Collaborative Filtering and Redis. 
+
+Full guide coming soon..
