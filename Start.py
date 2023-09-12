@@ -17,7 +17,7 @@ with st.spinner(text='Loading and indexing data...'):
     load_data()
     pass
 
-
+# duplicate codes are present due to streamlit limitation for code resuablity but could be refactored better.
 # we dont have user meta data and only 672 users ratings are present, so just taking range from 1 to 672 user ids
 # make sure to fetch them from redis if you have real users.
 # we are interested in ratings by user and thier ids for recommending products. To Load user metadata directly :
@@ -88,7 +88,6 @@ if st.session_state.get('product'):
 
 #watched movies
 # view names could be confusing and renamed
-# duplicate codes are present due to streamlit limitation for code resuablity.
 if user not in ('new user','none'):
     
     st.subheader('Recommended Movies')
