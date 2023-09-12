@@ -18,10 +18,11 @@ with st.spinner(text='Loading and indexing data...'):
     pass
 
 
-# we dont have user meta data and only 672 users ratings are present in the data, so just taking first 672 user ids
-# make sure to fetch them from redis like we did for movies if you have real users.
-# we are interested in ratings by user and to maintain that relation for recommending products. For loading user metadata directly if we dont have any
+# we dont have user meta data and only 672 users ratings are present, so just taking range from 1 to 672 user ids
+# make sure to fetch them from redis if you have real users.
+# we are interested in ratings by user and thier ids for recommending products. To Load user metadata directly :
 # $ curl -s https://raw.githubusercontent.com/RediSearch/redisearch-getting-started/master/sample-app/redisearch-docker/dataset/import_users.redis | redis-cli -h localhost -p 6379 --pipe
+# or paste to browser https://raw.githubusercontent.com/RediSearch/redisearch-getting-started/master/sample-app/redisearch-docker/dataset/import_users.redis directly to view the redis command for saving the user data
 
 users_id = ['none'] # if no user id i.e. only show top rated movies
 users_id = users_id + ["user:{}".format(i) for i in range(1,672)]
@@ -53,6 +54,7 @@ if user != "none" :
     
 
 #watched movies
+# holds a specific view here for watched movies layout.
 if user not in ('new user','none'):
     user_id = user.split(':')
     user_id = user_id[1]        
@@ -85,14 +87,15 @@ if st.session_state.get('product'):
 
 
 #watched movies
+# view names could be confusing and renamed
+# duplicate codes are present due to streamlit limitation for code resuablity.
 if user not in ('new user','none'):
     
     st.subheader('Recommended Movies')
     view_recommended_products(recommended_product)
     
 else :
-    #Top rated movies for others
-
+    #Top rated recommended movies for other users.
     st.subheader('Top Rated Movies')
     view_products(products)
     
