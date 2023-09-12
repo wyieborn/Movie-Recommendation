@@ -37,10 +37,13 @@ with st.sidebar:
         users_id
     )
 
-
-if user != "none" :
+def retrieve_id(user):
     user_id = user.split(':')
     user_id = user_id[1]
+    return user_id
+    
+if user != "none" :
+    user_id = retrieve_id(user)
     dict_user = get_user_details(user_id)
     f_name = dict_user['first_name']
     l_name = dict_user['last_name']
@@ -56,8 +59,7 @@ if user != "none" :
 #watched movies
 # holds a specific view here for watched movies layout.
 if user not in ('new user','none'):
-    user_id = user.split(':')
-    user_id = user_id[1]        
+    user_id = retrieve_id(user)       
     st.subheader('Watched Movies')
     watched_products = get_watched_movies(user_id)
     # print('from get watched movies\n',len(watched_products))
@@ -68,8 +70,7 @@ with TimeContext('Loading From Redis : The execution time '):
     products = get_top_movies('idx:movie')
     #watched movies
     if user not in ('new user','none'):
-        user_id = user.split(':')
-        user_id = user_id[1]
+        user_id = retrieve_id(user)
         
         #recommended movies
         itembased = item_recommend(user_id)
