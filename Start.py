@@ -62,7 +62,6 @@ if user not in ('new user','none'):
     user_id = retrieve_id(user)       
     st.subheader('Watched Movies')
     watched_products = get_watched_movies(user_id)
-    # print('from get watched movies\n',len(watched_products))
     view_watched_products(watched_products)
 
     
