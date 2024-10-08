@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/e54f40b5-4039-446a-aef7-b22289617d40)
 
-Movie Recommendation using Collaborative Filtering, Redis and Docker. The jupyter notebook file "reproduce_redis_recommendation.ipynb" has redis commands for interacting with redis server and recommendations steps breakdown. Please install docker and make sure its running. Redis and docker setup commands can be found in the bottom sections. 
+Movie Recommendation using Collaborative Filtering, Redis and Docker. The jupyter notebook file "reproduce_redis_recommendation.ipynb" has redis commands for interacting with redis server, creating pipelines and recommendations steps breakdown. Please install docker and make sure its running. Redis and docker setup commands can be found in the bottom sections. 
 
 The dataset for user details, movie details and theatre details(though we dont use it here) for the purpose of this project can be obtained and seeded directly into the redis server using below commands after running redis.
 
@@ -11,6 +11,8 @@ $ curl -s https://raw.githubusercontent.com/RediSearch/redisearch-getting-starte
 $ curl -s https://raw.githubusercontent.com/RediSearch/redisearch-getting-started/master/sample-app/redisearch-docker/dataset/import_users.redis | redis-cli -h localhost -p 6379 --pipe
 
 The "filtered_ratings.csv" has the user ratings for the movie id's and seeded during application startup.
+
+![image](https://github.com/user-attachments/assets/ebcf3417-f643-4aa2-9abf-8b6e48916231)
 
 -------------------------------------------------------------------------------------------------------------
 
