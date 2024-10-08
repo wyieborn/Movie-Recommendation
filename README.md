@@ -74,6 +74,7 @@ sadd, srem, smembers , sunion, sunionstore
 
 ![image](https://github.com/user-attachments/assets/38c89a04-36f1-4724-99e6-00f8740d1249)
 
-![image](https://github.com/user-attachments/assets/7086da01-2d01-4e50-809e-4bc042a1968f)
+![image](https://github.com/user-attachments/assets/200cb759-dc6b-4556-9231-a4b1b700eae5)  ![image](https://github.com/user-attachments/assets/6ca4c15b-8cf8-43a2-9fc5-075018384f04)
+
 
 
