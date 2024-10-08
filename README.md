@@ -45,6 +45,7 @@ The grocery chain introduces item ratings (1-5) for users. Customers with simila
 ![image](https://github.com/user-attachments/assets/b474f414-b080-4046-bcec-236f7117f81f)
 
 
+## Redis and docker steps.
 
 ![image](https://github.com/user-attachments/assets/d7c65fab-af44-4601-a9c5-4f0280f7f7f8)
 
@@ -59,7 +60,7 @@ It is recommended to manually index the movie and user after seeding using below
 
 ## Redis Cli and basic commands
 
-below are commands for practice and useful when making our application.
+Below are commands for practice and useful when making our application.
 
 sadd, srem, smembers , sunion, sunionstore
 
