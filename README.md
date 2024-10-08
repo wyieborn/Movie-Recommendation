@@ -1,5 +1,5 @@
 # Movie-Recommendation
-Movie Recommendation using Collaborative Filtering, Redis and Docker. The jupyter notebook file "reproduce_redis_recommendation.ipynb" has redis commands for verifying and analyzing purpose. Please install docker and make sure its running.
+Movie Recommendation using Collaborative Filtering, Redis and Docker. The jupyter notebook file "reproduce_redis_recommendation.ipynb" has redis commands for interacting with redis server and recommendations steps breakdown. Please install docker and make sure its running.
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -51,9 +51,9 @@ The grocery chain introduces item ratings (1-5) for users. Customers with simila
 
 It is recommended to manually index the movie and user after seeding using below commands. 
 
-#### FT.CREATE idx:movie ON hash PREFIX 1 "movie:" SCHEMA title TEXT SORTABLE release_year NUMERIC SORTABLE rating NUMERIC SORTABLE genre TAG SORTABLE
+- FT.CREATE idx:movie ON hash PREFIX 1 "movie:" SCHEMA title TEXT SORTABLE release_year NUMERIC SORTABLE rating NUMERIC SORTABLE genre TAG SORTABLE
 
-#### FT.CREATE idx:user ON hash PREFIX 1 "user:" SCHEMA gender TAG country TAG SORTABLE last_login NUMERIC SORTABLE location GEO
+- FT.CREATE idx:user ON hash PREFIX 1 "user:" SCHEMA gender TAG country TAG SORTABLE last_login NUMERIC SORTABLE location GEO
 
 ![image](https://github.com/user-attachments/assets/1eb07ba6-726d-426f-92c7-9be86c0da608)
 
