@@ -2,7 +2,8 @@
 
 ![image](https://github.com/user-attachments/assets/e54f40b5-4039-446a-aef7-b22289617d40)
 
-Movie Recommendation using Collaborative Filtering, Redis and Docker. The jupyter notebook file "reproduce_redis_recommendation.ipynb" has redis commands for interacting with redis server and recommendations steps breakdown. Please install docker and make sure its running.
+Movie Recommendation using Collaborative Filtering, Redis and Docker. The jupyter notebook file "reproduce_redis_recommendation.ipynb" has redis commands for interacting with redis server and recommendations steps breakdown. Please install docker and make sure its running. Redis and docker setup commands can be found in the bottom sections. 
+
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -77,4 +78,8 @@ sadd, srem, smembers , sunion, sunionstore
 ![image](https://github.com/user-attachments/assets/200cb759-dc6b-4556-9231-a4b1b700eae5)  ![image](https://github.com/user-attachments/assets/6ca4c15b-8cf8-43a2-9fc5-075018384f04)
 
 
+# References
 
+Redis guide for recommendation system. Main reference used for this project.
+- https://docs.deistercloud.com/mediaContent/Databases.30/Redis/media/Guide-to-Recommendations-using-Redis.pdf
+- https://redis.io/commands
