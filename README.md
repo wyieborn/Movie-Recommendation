@@ -10,7 +10,7 @@ $ curl -s https://raw.githubusercontent.com/RediSearch/redisearch-getting-starte
 
 $ curl -s https://raw.githubusercontent.com/RediSearch/redisearch-getting-started/master/sample-app/redisearch-docker/dataset/import_users.redis | redis-cli -h localhost -p 6379 --pipe
 
-The "filtered_ratings.csv" has the user ratings filtered based on if the movie url is provided or not and seeded during application startup.
+The "filtered_ratings.csv" has the user ratings filtered based on if the movie image url is present or not (code for this step is not provided in the repo) and seeded during application startup.
 
 #### Item to User
 ![image](https://github.com/user-attachments/assets/ebcf3417-f643-4aa2-9abf-8b6e48916231)
