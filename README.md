@@ -12,7 +12,7 @@ $ curl -s https://raw.githubusercontent.com/RediSearch/redisearch-getting-starte
 
 The "filtered_ratings.csv" has the user ratings filtered based on if the movie image url is present or not (code for this step is not provided in the repo) and seeded during application startup.
 
-#### Item to User Example:
+#### Item to User Matrix:
 ![image](https://github.com/user-attachments/assets/ae3a6281-5de1-4b06-855d-288df7c200af)
 
 -------------------------------------------------------------------------------------------------------------
