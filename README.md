@@ -1,4 +1,7 @@
 # Movie-Recommendation
+
+![image](https://github.com/user-attachments/assets/e54f40b5-4039-446a-aef7-b22289617d40)
+
 Movie Recommendation using Collaborative Filtering, Redis and Docker. The jupyter notebook file "reproduce_redis_recommendation.ipynb" has redis commands for interacting with redis server and recommendations steps breakdown. Please install docker and make sure its running.
 
 -------------------------------------------------------------------------------------------------------------
@@ -6,7 +9,6 @@ Movie Recommendation using Collaborative Filtering, Redis and Docker. The jupyte
 <img width="1267" alt="Screenshot 2023-07-31 114519" src="https://github.com/wyieborn/Movie-Recommendation/assets/24772740/35d016ad-a7a2-4b38-8ced-d5770bbba734">
 
 
-![image](https://github.com/user-attachments/assets/e54f40b5-4039-446a-aef7-b22289617d40)
 
 # OBJECTIVES
 
