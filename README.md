@@ -21,13 +21,12 @@ The "filtered_ratings.csv" has the user ratings filtered based on if the movie i
 
 
 
-# OBJECTIVES
+# Sections
 
 - Data Collection and Preprocessing.
 - Collaborative Filtering Implementation.
 - Redis Integration.
 - Loading and Indexing.
-- Real-time Recommendation
 - Generation.
 
 ![image](https://github.com/user-attachments/assets/35e3aed6-5a94-458d-b4e6-237b30903426)
